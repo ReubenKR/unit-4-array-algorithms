@@ -31,8 +31,8 @@ public class ArrayAlgorithms {
 
    public int findMax() {
       // REQUIRED: return the largest integer in intArray
-      int y = 0;
-      for (int x= 0; x < intArray.length; x++) {
+      int y = intArray[0];
+      for (int x = 0; x < intArray.length; x++) {
          if (intArray[x] > y) {
             y = intArray[x];
          }
@@ -43,10 +43,11 @@ public class ArrayAlgorithms {
    public boolean hasDuplicates() {
       // REQUIRED: return true if there are duplicate values in the array
       // HINT: use a nested for loop
-      boolean duplicate = false;
       for (int x = 0; x < intArray.length; x++) {
          for (int z = x + 1; z < intArray.length; x++) {
-            if (intArray[x] == intArray[z]) return true;
+            if (intArray[x] == intArray[z]) {
+               return true;
+            }
          }   
       }
       return false;
