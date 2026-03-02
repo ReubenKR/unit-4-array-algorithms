@@ -44,7 +44,7 @@ public class ArrayAlgorithms {
       // REQUIRED: return true if there are duplicate values in the array
       // HINT: use a nested for loop
       for (int x = 0; x < intArray.length; x++) {
-         for (int z = x + 1; z < intArray.length; x++) {
+         for (int z = x + 1; z < intArray.length; z++) {
             if (intArray[x] == intArray[z]) {
                return true;
             }
